@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Calculate your RTU SGPA easily with this modern calculator" />
+  <meta name="theme-color" content="#8a56ac" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>RTU SGPA Calculator</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <h1><i class="fas fa-calculator"></i> RTU SGPA Calculator</h1>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">SGPA</a></li>
+          <li><a href="cgpa.html">CGPA</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="container">
+        <h2 class="hero-title">Calculate Your Semester Grade Point Average</h2>
+        <p class="hero-subtitle">A simple and accurate way to calculate your RTU SGPA</p>
+      </div>
+    </div>
+    <div class="container calculator-container">
+      <div class="card">
+        <div class="card-header">
+          <h3><i class="fas fa-graduation-cap"></i> SGPA Calculator</h3>
+        </div>
+        <div class="card-body">
+          <div class="semester-selection">
+            <label for="semester">Select Semester:</label>
+            <div class="select-wrapper">
+              <select id="semester">
+                <option value="0" selected>1st Semester</option>
+                <option value="1">2nd Semester</option>
+                <option value="2">3rd Semester</option>
+                <option value="3">4th Semester</option>
+                <option value="4">5th Semester</option>
+                <option value="5">6th Semester</option>
+                <option value="6">7th Semester</option>
+                <option value="7">8th Semester</option>
+              </select>
+              <i class="fas fa-chevron-down select-icon"></i>
+            </div>
+            <div id="totalCredits" class="total-credits">Total Credits: 0</div>
+          </div>
+          <div id="subjectInputs" class="subject-inputs"></div>
+          <button id="calculate" class="calculate-button"><i class="fas fa-calculator"></i> Calculate SGPA</button>
+          <div id="result" class="result"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> RTU SGPA Calculator. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/iamhimanshu98" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/iamhimanshu98/" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/i.am.himanshu98/" class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>

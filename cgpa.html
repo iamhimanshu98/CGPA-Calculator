@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Calculate your RTU CGPA easily with this modern calculator" />
+  <meta name="theme-color" content="#8a56ac" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>RTU CGPA Calculator</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <h1><i class="fas fa-calculator"></i> RTU CGPA Calculator</h1>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">SGPA</a></li>
+          <li><a href="cgpa.html" class="active">CGPA</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="container">
+        <h2 class="hero-title">Calculate Your Cumulative Grade Point Average</h2>
+        <p class="hero-subtitle">A simple and accurate way to calculate your RTU CGPA</p>
+      </div>
+    </div>
+    <div class="container calculator-container">
+      <div class="card">
+        <div class="card-header">
+          <h3><i class="fas fa-chart-line"></i> CGPA Calculator</h3>
+        </div>
+        <div class="card-body">
+          <div class="semester-selection">
+            <label for="cgpaSemester">Select Semester:</label>
+            <div class="select-wrapper">
+              <select id="cgpaSemester">
+                <option value="2">2nd Semester</option>
+                <option value="3">3rd Semester</option>
+                <option value="4">4th Semester</option>
+                <option value="5">5th Semester</option>
+                <option value="6">6th Semester</option>
+                <option value="7">7th Semester</option>
+                <option value="8" selected>8th Semester</option>
+              </select>
+              <i class="fas fa-chevron-down select-icon"></i>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="cgpaPrevious">CGPA of Last Semester:</label>
+            <input type="number" id="cgpaPrevious" placeholder="Enter previous CGPA" />
+          </div>
+          <div class="input-container">
+            <label for="sgpaCurrent">SGPA of Current Semester:</label>
+            <input type="number" id="sgpaCurrent" placeholder="Enter current SGPA" />
+          </div>
+          <button id="calculateCGPA" class="calculate-button"><i class="fas fa-calculator"></i> Calculate CGPA</button>
+          <div id="cgpaResult" class="result"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 RTU CGPA Calculator. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="cgpa.js"></script>
+</body>
+
+</html>
