@@ -33,5 +33,5 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/cgpa-calculator.git
+   git clone https://github.com/iamhimanshu98/CGPA-Calculator.git
    cd cgpa-calculator
